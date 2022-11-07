@@ -23,19 +23,24 @@ function App() {
       age: Number(age),
     });
   };
-  useEffect(() => {
-    const getUsers = async () => {
-      const data = await getDocs(usersCollectionRef);
-      setUsers(
-        data.docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }))
-      );
-    };
-
-    getUsers();
-  }, [users]);
+  useEffect(
+    () => {
+      const getUsers = async () => {
+        const data = await getDocs(usersCollectionRef);
+        setUsers(
+          data.docs.map((doc) => ({
+            ...doc.data(),
+            id: doc.id,
+          }))
+        );
+      };
+      console.log("read from firestore");
+      getUsers();
+    },
+    [
+      /*users*/
+    ]
+  );
 
   return (
     <div className="App">
