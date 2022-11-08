@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+@font-face {
+  font-family: "Kanit Thin";
+  src: url("./assets/Kanit-Thin.woff2") format("woff2"),
+    url("./assets/Kanit-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url("./assets/Kanit-Medium.woff2") format("woff2"),
+    url("./assets/Kanit-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #0b0f14;
+  padding-top: 1px;
+}
+.create_component {
+  width: 90%;
+  margin: auto;
+  margin-top: 7vh;
+}
+.create_div {
+  min-width: 50%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.create_div > form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+.create_div > form > input {
+  border: none;
+  border-radius: 3px;
+  color: whitesmoke;
+  outline: 0.5px solid rgba(245, 245, 245, 0.573);
+  padding-left: 15px;
+  font-family: "Kanit Thin";
+  font-size: 1rem;
+  flex: 0.3;
+  height: 40px;
+  background-color: #0b0f14;
+}
+.create_div > form > input:focus {
+  outline: 0.5px solid #3c16c4;
+}
+.create_div > button {
+  cursor: pointer;
+  color: rgba(245, 245, 245, 0.548);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  margin: auto;
+  margin-top: 1.85rem;
+  font-family: "Kanit Thin";
+  font-size: 2rem;
+  font-weight: 300;
+  width: 14rem;
+  height: 50px;
+  background-image: linear-gradient(
+    -200deg,
+    #513dc3 0%,
+    #3c16c4 100%
+  );
+  /* background-image: linear-gradient(
+    -200deg,
+    #513dc3 0%,
+    #3c16c4 50%,
+    #0704c1 100%
+  ); */
+}
+.users {
+  width: 90%;
+  margin: 60px auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
