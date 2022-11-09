@@ -90,6 +90,7 @@ function App() {
       </div>
       {isOpen && (
         <Modal
+          className="modal"
           setIsOpen={setIsOpen}
           user={currentUser}
           updateFunc={updateUsersInApp}

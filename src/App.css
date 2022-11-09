@@ -16,7 +16,6 @@ input[type="number"] {
   font-family: "Kanit Thin";
   src: url("./assets/Kanit-Thin.woff2") format("woff2"),
     url("./assets/Kanit-Thin.woff") format("woff");
-  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
@@ -25,7 +24,6 @@ input[type="number"] {
   font-family: "Kanit";
   src: url("./assets/Kanit-Medium.woff2") format("woff2"),
     url("./assets/Kanit-Medium.woff") format("woff");
-  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -62,7 +60,7 @@ input[type="number"] {
   outline: 0.5px solid rgba(245, 245, 245, 0.573);
   padding-left: 15px;
   font-family: "Kanit Thin";
-  font-size: 1rem;
+  font-size: 1.125rem;
   flex: 0.3;
   height: 40px;
   background-color: #0b0f14;
@@ -80,7 +78,8 @@ input[type="number"] {
   margin: auto;
   margin-top: 1.85rem;
   font-family: "Kanit";
-  font-size: 2rem;
+  font-weight: 100;
+  font-size: 1.7rem;
   width: 15rem;
   height: 55px;
   background-image: linear-gradient(

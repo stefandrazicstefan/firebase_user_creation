@@ -21,6 +21,7 @@
 .upper_div_left > h1 {
   font-family: "Kanit";
   font-size: 2.125rem;
+  font-weight: 500;
   color: #080b0e;
 }
 .upper_div_right {
