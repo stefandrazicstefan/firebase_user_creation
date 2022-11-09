@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.60cac49b.css",
+    "main.js": "/static/js/main.96db0bb3.js",
+    "static/media/Kanit-Medium.woff": "/static/media/Kanit-Medium.702ab73bf8ad756f2584.woff",
+    "static/media/Kanit-Thin.woff": "/static/media/Kanit-Thin.3e24eb12fd9c8b9fcade.woff",
+    "static/media/Kanit-Medium.woff2": "/static/media/Kanit-Medium.8aa183ba235c64948691.woff2",
+    "static/media/Kanit-Thin.woff2": "/static/media/Kanit-Thin.bee485d3ca6b5b5f4643.woff2",
+    "index.html": "/index.html",
+    "main.60cac49b.css.map": "/static/css/main.60cac49b.css.map",
+    "main.96db0bb3.js.map": "/static/js/main.96db0bb3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60cac49b.css",
+    "static/js/main.96db0bb3.js"
+  ]
+}
