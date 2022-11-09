@@ -38,14 +38,14 @@ function UserCard({
             setIsOpen(true);
           }}
         >
-          Edit User
+          Edit Member
         </button>
 
         <button
           className="delete_user"
           onClick={() => deleteUser(user.id)}
         >
-          Delete User
+          Delete Member
         </button>
       </div>
     </div>

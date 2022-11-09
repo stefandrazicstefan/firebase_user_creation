@@ -108,3 +108,12 @@ input[type="number"] {
   align-items: center;
   flex-wrap: wrap;
 }
+.swal-button {
+  font-family: "Kanit Thin";
+  padding: 7px 19px;
+  background-color: #0b0f14;
+  font-size: 16px;
+}
+.sweet-alert_button button:hover {
+  background-color: #74848d;
+}

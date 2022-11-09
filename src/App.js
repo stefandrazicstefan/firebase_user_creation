@@ -4,6 +4,8 @@ import { db } from "./firebase";
 import { collection, getDocs, addDoc } from "firebase/firestore";
 import UserCard from "./UserCard";
 import Modal from "./Modal";
+import swal from "sweetalert";
+import firebase from "firebase/compat/app";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -28,8 +30,21 @@ function App() {
     };
     getUsers();
   };
-  const cleanPhotourl = (e) => {};
   const createUser = () => {
+    if (name === "") {
+      swal({
+        text: "Please enter a name!",
+        className: ".sweet-alert_button",
+      });
+      return;
+    }
+    if (age === "") {
+      swal({
+        text: "Please enter an age!",
+        className: ".sweet-alert_button",
+      });
+      return;
+    }
     const createSingleUser = async () => {
       await addDoc(usersCollectionRef, {
         name: name,
@@ -74,18 +89,20 @@ function App() {
             />
             <input
               value={age}
-              onChange={(e) => setAge(e.target.value)}
+              onChange={(e) => {
+                setAge(e.target.value);
+              }}
               type="number"
               placeholder="age"
             />
             <input
-              onLoad={(e) => (e.target.value = "")}
+              className="photoInput"
               onChange={(e) => changePhotoUrl(e)}
               type="text"
               placeholder="photoUrl"
             />
           </form>
-          <button onClick={createUser}>Create user</button>
+          <button onClick={createUser}>Add member</button>
         </div>
       </div>
       {isOpen && (

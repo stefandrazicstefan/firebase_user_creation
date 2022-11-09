@@ -49,7 +49,7 @@ function Modal({ setIsOpen, user, updateFunc }) {
       <div className="centered">
         <div className="modal">
           <div className="modalHeader">
-            <h4 className="heading">Edit user</h4>
+            <h4 className="heading">Edit Member</h4>
           </div>
           <button
             className="closeBtn"

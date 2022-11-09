@@ -28,7 +28,8 @@
   margin: auto 0;
 }
 .upper_div_right > img {
-  width: 130px;
+  object-fit: cover;
+  width: 100px;
   height: 130px;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.906);
@@ -55,17 +56,11 @@
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
   transform: translate(1px, 1px);
 }
-.edit_user {
-}
 @media only screen and (max-width: 400px) {
   .user_card {
     width: 280px;
     min-width: 280px;
     min-height: 200px;
-  }
-  .upper_div_right > img {
-    width: 100px;
-    height: 100px;
   }
   .upper_div_right {
     margin: auto 0;
