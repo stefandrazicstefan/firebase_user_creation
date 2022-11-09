@@ -31,11 +31,18 @@
   display: flex;
   gap: 0.5rem;
 }
-.increase_age,
+.edit_user,
 .delete_user {
   font-family: "Kanit Thin";
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid rgba(245, 245, 245, 0.733);
+  border: 1.5px solid #06080a;
   border-radius: 6%;
+  transition: all ease-in 0.2s;
+}
+.edit_user:hover,
+.delete_user:hover {
+  background-color: rgba(245, 245, 245, 0.087);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  transform: translate(1px, 1px);
 }

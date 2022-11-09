@@ -2,13 +2,15 @@ import React from "react";
 import { updateDoc, doc, deleteDoc } from "firebase/firestore";
 import { db } from "./firebase";
 import "./UserCard.css";
+import Modal from "./Modal";
 
-function UserCard({ user, updateFunc }) {
-  const updateUser = async (id, age) => {
-    const userDoc = doc(db, "users", id);
-    await updateDoc(userDoc, { age: Number(age) + 1 });
-    updateFunc();
-  };
+function UserCard({
+  currentUser,
+  setCurrentUser,
+  user,
+  updateFunc,
+  setIsOpen,
+}) {
   const deleteUser = async (id) => {
     const userDoc = doc(db, "users", id);
     await deleteDoc(userDoc);
@@ -30,16 +32,20 @@ function UserCard({ user, updateFunc }) {
       </div>
       <div className="lower_div">
         <button
-          className="increase_age"
-          onClick={() => updateUser(user.id, user.age)}
+          className="edit_user"
+          onClick={() => {
+            setCurrentUser(user);
+            setIsOpen(true);
+          }}
         >
-          Increase age
+          Edit User
         </button>
+
         <button
           className="delete_user"
           onClick={() => deleteUser(user.id)}
         >
-          Delete user
+          Delete User
         </button>
       </div>
     </div>

@@ -3,6 +3,7 @@ import "./App.css";
 import { db } from "./firebase";
 import { collection, getDocs, addDoc } from "firebase/firestore";
 import UserCard from "./UserCard";
+import Modal from "./Modal";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -12,6 +13,8 @@ function App() {
     "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
   );
   const [age, setAge] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentUser, setCurrentUser] = useState([]);
 
   const updateUsersInApp = () => {
     const getUsers = async () => {
@@ -25,7 +28,7 @@ function App() {
     };
     getUsers();
   };
-
+  const cleanPhotourl = (e) => {};
   const createUser = () => {
     const createSingleUser = async () => {
       await addDoc(usersCollectionRef, {
@@ -76,6 +79,7 @@ function App() {
               placeholder="age"
             />
             <input
+              onLoad={(e) => (e.target.value = "")}
               onChange={(e) => changePhotoUrl(e)}
               type="text"
               placeholder="photoUrl"
@@ -84,14 +88,24 @@ function App() {
           <button onClick={createUser}>Create user</button>
         </div>
       </div>
+      {isOpen && (
+        <Modal
+          setIsOpen={setIsOpen}
+          user={currentUser}
+          updateFunc={updateUsersInApp}
+        />
+      )}
       <div className="users">
         {" "}
         {users.map((user, index) => {
           return (
             <UserCard
+              setIsOpen={setIsOpen}
               user={user}
               key={index}
               updateFunc={updateUsersInApp}
+              currentUser={currentUser}
+              setCurrentUser={setCurrentUser}
             />
           );
         })}

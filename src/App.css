@@ -65,6 +65,7 @@ input[type="number"] {
   flex: 0.3;
   height: 40px;
   background-color: #0b0f14;
+  transition: all 0.2s ease-in-out;
 }
 .create_div > form > input:focus {
   outline: 0.5px solid #3c16c4;
@@ -87,16 +88,21 @@ input[type="number"] {
     #513dc3 0%,
     #3c16c4 100%
   );
-  /* background-image: linear-gradient(
+  transition: all 0.2s ease-in-out;
+}
+.create_div > button:hover {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  transform: translate(-2px, 2px);
+  background-image: linear-gradient(
     -200deg,
     #513dc3 0%,
     #3c16c4 50%,
     #0704c1 100%
-  ); */
+  );
 }
 .users {
   width: 90%;
-  margin: 60px auto;
+  margin: 80px auto;
   display: flex;
   gap: 2rem;
   justify-content: space-evenly;
