@@ -82,22 +82,13 @@ input[type="number"] {
   font-size: 1.7rem;
   width: 15rem;
   height: 55px;
-  background-image: linear-gradient(
-    -200deg,
-    #513dc3 0%,
-    #3c16c4 100%
-  );
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, #513dc3, transparent) #3c16c4;
 }
 .create_div > button:hover {
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
-  transform: translate(-2px, 2px);
-  background-image: linear-gradient(
-    -200deg,
-    #513dc3 0%,
-    #3c16c4 50%,
-    #0704c1 100%
-  );
+  transform: translate(-1px, 1px);
+  background-color: #7828e8;
 }
 .users {
   width: 90%;

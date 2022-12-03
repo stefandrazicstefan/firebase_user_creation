@@ -115,12 +115,12 @@ function App() {
       )}
       <div className="users">
         {" "}
-        {users.map((user, index) => {
+        {users.map((user) => {
           return (
             <UserCard
               setIsOpen={setIsOpen}
               user={user}
-              key={index}
+              key={user.id}
               updateFunc={updateUsersInApp}
               currentUser={currentUser}
               setCurrentUser={setCurrentUser}

@@ -49,6 +49,7 @@
   border: 1.5px solid #06080a;
   border-radius: 6%;
   transition: all ease-in 0.2s;
+  cursor: pointer;
 }
 .edit_user:hover,
 .delete_user:hover {
