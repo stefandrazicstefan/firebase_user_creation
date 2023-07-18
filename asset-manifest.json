@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/TeamManagement/static/css/main.cc5f7e6b.css",
-    "main.js": "/TeamManagement/static/js/main.fb48b8e8.js",
-    "static/media/Kanit-Medium.woff": "/TeamManagement/static/media/Kanit-Medium.702ab73bf8ad756f2584.woff",
-    "static/media/Kanit-Thin.woff": "/TeamManagement/static/media/Kanit-Thin.3e24eb12fd9c8b9fcade.woff",
-    "static/media/Kanit-Medium.woff2": "/TeamManagement/static/media/Kanit-Medium.8aa183ba235c64948691.woff2",
-    "static/media/Kanit-Thin.woff2": "/TeamManagement/static/media/Kanit-Thin.bee485d3ca6b5b5f4643.woff2",
-    "index.html": "/TeamManagement/index.html",
-    "main.cc5f7e6b.css.map": "/TeamManagement/static/css/main.cc5f7e6b.css.map",
-    "main.fb48b8e8.js.map": "/TeamManagement/static/js/main.fb48b8e8.js.map"
+    "main.css": "/team-management/static/css/main.cc5f7e6b.css",
+    "main.js": "/team-management/static/js/main.fb48b8e8.js",
+    "static/media/Kanit-Medium.woff": "/team-management/static/media/Kanit-Medium.702ab73bf8ad756f2584.woff",
+    "static/media/Kanit-Thin.woff": "/team-management/static/media/Kanit-Thin.3e24eb12fd9c8b9fcade.woff",
+    "static/media/Kanit-Medium.woff2": "/team-management/static/media/Kanit-Medium.8aa183ba235c64948691.woff2",
+    "static/media/Kanit-Thin.woff2": "/team-management/static/media/Kanit-Thin.bee485d3ca6b5b5f4643.woff2",
+    "index.html": "/team-management/index.html",
+    "main.cc5f7e6b.css.map": "/team-management/static/css/main.cc5f7e6b.css.map",
+    "main.fb48b8e8.js.map": "/team-management/static/js/main.fb48b8e8.js.map"
   },
   "entrypoints": [
     "static/css/main.cc5f7e6b.css",
